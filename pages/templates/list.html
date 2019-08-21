@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    {% for page in pages %}
+    <a href="{{page.get_absolute_url}} ">
+    {{page.title}}<br>
+    </a>
+    {{page.last_update}}<br>
+    {%endfor%}
+  </body>
+</html>
